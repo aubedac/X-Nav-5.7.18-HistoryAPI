@@ -1,11 +1,7 @@
-function supports_history_api() {
-  return !!(window.history && history.pushState);
-}
-
 function swapPhoto(href) {
   var req = new XMLHttpRequest();
   req.open("GET",
-           "http://gsyc.es/~grex/history_api/gallery/" +
+           "https://aubedac.github.io/X-Nav-5.7.18-HistoryAPI/gallery/" +
              href.split("/").pop(),
            false);
   req.send(null);
@@ -32,7 +28,7 @@ function setupHistoryClicks() {
 }
 
 window.onload = function() {
-  if (!supports_history_api()) { return; }
+  if (!Modernizr.history) { return ; }
   setupHistoryClicks();
   window.setTimeout(function() {
     window.addEventListener("popstate", function(e) {
@@ -40,4 +36,3 @@ window.onload = function() {
     }, false);
   }, 1);
 }
-
