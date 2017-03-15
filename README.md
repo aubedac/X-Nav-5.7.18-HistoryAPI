@@ -1,4 +1,4 @@
 # X-Nav-5.7.18-HistoryAPI
 Ejercicio 5.7.18 - History API - Cambiando la historia con HTML5
 
-(try Me!)[http://aubedac.github.io/X-Nav-5.7.18-HistoryAPI/biblio.html]
+[http://aubedac.github.io/X-Nav-5.7.18-HistoryAPI/biblio.html]
